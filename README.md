@@ -8,4 +8,4 @@ This project can be used to perform some operation on strings like
 6. Clear all text present in textarea
 
 # Website URL:
-https://ny-text-generater.netlify.app/
+https://ny-text-formatter.netlify.app/
