@@ -139,9 +139,15 @@ textarea{
   .home{
     width: 70%;
   }
+  .modal{
+    width: 60%;
+  }
 }
 @media screen and (max-width:550px) {
   .home {
     width: 95%;
+  }
+  .modal{
+    width: 90%;
   }
 }
