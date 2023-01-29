@@ -1,0 +1,147 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif,verdana;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: azure;
+  position: relative;
+}
+.navbar{
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+}
+.navbar>h3{
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 3px grey;
+}
+.navbar>h3>span{
+  color: blue;
+}
+
+/* ------------------- Home ------------------------- */
+.home{
+  width: 50%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 1px 1px 5px grey;
+}
+.home>h3{
+  padding:15px;
+  text-align: center;
+  font-size: 25px;
+  color: blue;
+  letter-spacing: 1.4px;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: azure;
+}
+.btn{
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: white;
+  padding: 6px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  transition: 0.3s linear;
+}
+.btn:hover{
+  background-color: rgb(14, 14, 96);
+  cursor: pointer;
+}
+.btn-clear{
+  background-color: red;
+}
+.btn-clear:hover{
+  background-color: rgb(135, 20, 20);
+}
+.count-words{
+  margin-top: 10px;
+}
+.count-words>h4{
+  color: rgb(66, 61, 61);
+}
+.count-words>p{
+  padding: 4px 0px;
+}
+
+/* ------------------------------- Modal --------------------------- */
+.modal{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 4px grey;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.modal>form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal>form>p{
+  padding: 10px;
+  color: grey;
+}
+.modal input{
+  width: 100%;
+  padding: 7px;
+  outline: none;
+  background-color: azure;
+  border: 1px solid grey;
+}
+.close-modal{
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+
+}
+.close-modal:hover{
+  cursor: pointer;
+  color: red;
+}
+
+/* ------------------------------- Alert --------------------------- */
+.alert{
+  width: 100%;
+  padding: 3px 15px;
+  border-radius: 10px;
+  letter-spacing: 1.1px;
+}
+.alert-danger{
+  color: rgb(135, 15, 15);
+  background-color: rgba(255, 0, 0, 0.176);
+}
+.alert-success{
+  color: blue;
+  background-color: rgba(6, 6, 118, 0.151);
+}
+/* ---------------------------- Media Query ---------------------- */
+@media screen and (max-width:900px){
+  .home{
+    width: 70%;
+  }
+}
+@media screen and (max-width:550px) {
+  .home {
+    width: 95%;
+  }
+}
